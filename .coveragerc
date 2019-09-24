@@ -1,0 +1,41 @@
+[run]
+branch = True
+include =
+    *tigr\drawer\drawer.py*
+    *tigr\drawer\tkinter_worker.py*
+    *tigr\drawer\turtle_worker.py*
+    *tigr\parser\peg_parser.py*
+    *tigr\parser\regex_parser.py*
+    *tigr\reader\reader.py*
+[report]
+omit =
+    */__init__.py*
+    *tigr/tigr_interface.py*
+
+
+
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    raise AssertionError
+    raise NotImplementedError
+    except Exception as e:
+    continue
+    command = {
+                        'cmd': cmd[0].upper(),
+                        'operand': [int(i) for i in cmd[1:]]
+                    }
+    self.do(command)
+    if cmd[0] == '#':
+
+    # drawer / worker
+    def bye
+
+    # regex parser
+
+    # peg parser
+        class TigrVisitor
+    # prompt source reader
+        self.cmdloop
